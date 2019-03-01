@@ -1,0 +1,38 @@
+---
+---
+
+@import "reset";
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300i');
+
+body {
+    padding: 50px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-style: italic;
+    font-size: 1em;
+    color: PaleGreen;
+    background-color: #2a2827;
+}
+
+hr {
+    margin: 20px 0 20px 0;
+    border: 1px solid PaleGreen;
+}
+
+h1 {
+    font-size: 6vw;
+    margin-bottom: 10px;
+}
+
+a {
+    color: PaleGreen;
+    text-decoration: none;
+    &:hover {
+        color: white;
+    }
+
+}
+
+li {
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
