@@ -1,5 +1,18 @@
 ---
 layout: default
+
+documented: 
+    - defcon
+    - fontParts
+    - vanilla
+    - ufo2fdk
+
+undocumented:
+    - compositor
+    - defconAppKit
+    - extractor
+    - fontMath
+    - fontPens
 ---
 
 # [RoboTools Developers](https://github.com/robotools)
@@ -7,9 +20,16 @@ layout: default
 ----
 
 <ul>
-{% for repository in site.github.public_repositories %}
-    {% unless repository.name == "robotools_dev" %}
-        <li><a href="http://{{ repository.name }}.robotools.dev">{{ repository.name }}</a> <span class="source">(<a href="{{ repository.html_url }}">source</a>)</span></li>
-    {% endunless %}
+{% for item in page.documented %}
+    <li><a href="http://{{ item }}.robotools.dev">{{ item }}</a> <span class="source">(<a href="https://github.com/robotools/{{ item }}">source</a>)</span></li>
 {% endfor %}
 </ul>
+
+----
+
+<ul class="no-documentation">
+{% for item in page.undocumented %}
+    <li><a href="https://github.com/robotools/{{ item }}">{{ item }}</a></li>
+{% endfor %}
+</ul>
+

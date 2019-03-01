@@ -29,7 +29,6 @@ a {
     &:hover {
         color: white;
     }
-
 }
 
 li {
@@ -39,4 +38,8 @@ li {
 
 .source {
     font-size: 60%;
+}
+
+.no-documentation li {
+    font-size: 4vw;
 }
