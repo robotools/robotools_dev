@@ -21,7 +21,7 @@ undocumented:
 
 <ul>
 {% for item in page.documented %}
-    <li><a href="http://{{ item }}.robotools.dev">{{ item }}</a> <span class="source">(<a href="https://github.com/robotools/{{ item }}">source</a>)</span></li>
+    <li><a href="https://{{ item }}.robotools.dev">{{ item }}</a> <span class="source">(<a href="https://github.com/robotools/{{ item }}">source</a>)</span></li>
 {% endfor %}
 </ul>
 
